@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+    <span v-bind:title="message">
+        悬停看到信息
+    </span>
+<!--    三个等号是绝对等于-->
+    <h1 v-if="type==='a'">a</h1>
+    <h1 v-else>No</h1>
+<!-- 遍历-->
+    <li v-for="item in items">
+        {{item.message}}
+    </li>
+
+</div>
+
+
+
+<!--    导入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        // Model :数据
+        data:{
+            message: "hello,vuel",
+            ok: true,
+            type: 'a',
+            items: [
+                {message: 'Java'},
+                {message: '前端'}
+            ]
+        }
+    });
+
+</script>
+
+</body>
+</html>

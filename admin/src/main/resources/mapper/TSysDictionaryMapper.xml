@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.mapper.TSysDictionaryMapper">
+
+    <resultMap id="BaseResultMap" type="com.admin.entity.TSysDictionary">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="createTime" column="CREATE_TIME" jdbcType="TIMESTAMP"/>
+            <result property="createUser" column="CREATE_USER" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="updateTime" column="UPDATE_TIME" jdbcType="TIMESTAMP"/>
+            <result property="updateUser" column="UPDATE_USER" jdbcType="VARCHAR"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="orderNo" column="ORDER_NO" jdbcType="INTEGER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="dictionarytypeCode" column="DICTIONARYTYPE_CODE" jdbcType="VARCHAR"/>
+            <result property="parentCode" column="PARENT_CODE" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,CREATE_TIME,CREATE_USER,
+        status,UPDATE_TIME,UPDATE_USER,
+        version,code,name,
+        ORDER_NO,remark,DICTIONARYTYPE_CODE,
+        PARENT_CODE
+    </sql>
+</mapper>

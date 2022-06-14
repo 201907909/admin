@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.mapper.TBaseUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.admin.entity.TBaseUser">
+            <id property="id" column="ID" jdbcType="BIGINT"/>
+            <result property="createTime" column="CREATE_TIME" jdbcType="TIMESTAMP"/>
+            <result property="createUser" column="CREATE_USER" jdbcType="VARCHAR"/>
+            <result property="status" column="STATUS" jdbcType="INTEGER"/>
+            <result property="updateTime" column="UPDATE_TIME" jdbcType="TIMESTAMP"/>
+            <result property="updateUser" column="UPDATE_USER" jdbcType="VARCHAR"/>
+            <result property="version" column="VERSION" jdbcType="INTEGER"/>
+            <result property="address" column="ADDRESS" jdbcType="VARCHAR"/>
+            <result property="email" column="EMAIL" jdbcType="VARCHAR"/>
+            <result property="loginname" column="LOGINNAME" jdbcType="VARCHAR"/>
+            <result property="mobilephone" column="MOBILEPHONE" jdbcType="VARCHAR"/>
+            <result property="name" column="NAME" jdbcType="VARCHAR"/>
+            <result property="password" column="PASSWORD" jdbcType="VARCHAR"/>
+            <result property="sex" column="SEX" jdbcType="INTEGER"/>
+            <result property="tel" column="TEL" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ID,CREATE_TIME,CREATE_USER,
+        STATUS,UPDATE_TIME,UPDATE_USER,
+        VERSION,ADDRESS,EMAIL,
+        LOGINNAME,MOBILEPHONE,NAME,
+        PASSWORD,SEX,TEL
+    </sql>
+</mapper>
