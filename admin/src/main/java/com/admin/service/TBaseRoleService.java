@@ -12,5 +12,4 @@ import org.apache.ibatis.annotations.Mapper;
 
 public interface TBaseRoleService extends IService<TBaseRole> {
 
-    public TBaseRole findById(Long id);
 }

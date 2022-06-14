@@ -21,7 +21,4 @@
         STATUS,UPDATE_TIME,UPDATE_USER,
         VERSION,DESCRIPTION,NAME
     </sql>
-    <select id="findBy" resultType="com.admin.entity.TBaseRole">
-        select * from t_base_role where id=#{id}
-    </select>
 </mapper>

@@ -1,5 +1,6 @@
 package com.admin.mapper;
 
+import com.admin.entity.TBaseMenu;
 import com.admin.entity.TBaseRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
@@ -13,8 +14,6 @@ import org.springframework.stereotype.Repository;
 */
 @Mapper
 public interface TBaseRoleMapper extends BaseMapper<TBaseRole> {
-
-    public TBaseRole findBy(Long id);
 }
 
 

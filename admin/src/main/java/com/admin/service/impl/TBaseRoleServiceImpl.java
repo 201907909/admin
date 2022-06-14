@@ -21,16 +21,7 @@ import java.util.List;
 @Service
 public class TBaseRoleServiceImpl extends ServiceImpl<TBaseRoleMapper, TBaseRole>
     implements TBaseRoleService{
-    @Resource
-    TBaseRoleMapper tBaseRoleMapper;
 
-
-
-    @Override
-    public TBaseRole findById(Long id) {
-        return tBaseRoleMapper.selectOne(new LambdaQueryWrapper<TBaseRole>().eq(TBaseRole::getId,id));
-
-    }
 
 }
 

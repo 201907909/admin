@@ -63,8 +63,8 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="TBaseRole" />
-                  <option name="tableName" value="t_base_role" />
+                  <option name="className" value="TSysDictionarytype" />
+                  <option name="tableName" value="t_sys_dictionarytype" />
                 </TableUIInfo>
               </list>
             </option>
